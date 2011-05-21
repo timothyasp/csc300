@@ -1,0 +1,32 @@
+# Latex files to ignore - forked from github/gitignore
+ux
+*.bbl
+*.blg
+*.dvi
+*.glg
+*.glo
+*.gls
+*.idx
+*.ilg
+*.ind
+*.ist
+*.lof
+*.log
+*.lot
+*.nlo
+*.out
+*.toc
+*.fdb_latexmk
+*.pdfsync
+*.synctex.gz
+*.nav
+*.snm
+*.vrb
+
+# Project specific directories to ignore
+templates/
+
+# TeXlipse stuff
+tmp/
+.project
+.texlipse
