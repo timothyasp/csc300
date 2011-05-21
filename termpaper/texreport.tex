@@ -1,0 +1,211 @@
+% CSC 300: Professional Responsibilities
+% Dr. Clark Turner
+
+% Two Column Format
+\documentclass[11pt]{article}
+%this allows us to specify sections to be single or multi column so that things
+% like title page and table of contents are single column
+\usepackage{multicol}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{setspace}
+\usepackage{url}
+
+%%% PAGE DIMENSIONS
+\usepackage{geometry} % to change the page dimensions
+\geometry{letterpaper}
+
+\begin{document}
+
+\title{\vfill Behind the Smoking Gun: Credit Rating Agencies} %\vfill gives us the black space at the top of the page
+\author{
+Timothy Asp\vspace{10pt} \\
+CSC 300: Professional Responsibilities\vspace{10pt} \\
+Dr. Clark Turner\vspace{10pt} \\
+}
+%\date{October 22, 2010} %Or use \Today for today's Date
+\date{May 20, 2011}
+
+\maketitle
+
+\vfill  %in combinaion with \newpage this forces the abstract to the bottom of the page
+\begin{abstract}
+In January 2011, the Financial Crisis Inquiry Commission (FCIC) released a report which outlines their research and investigation into the financial crisis of 2007 - 2010.  They concluded that the crisis was avoidable and list the 10 main causes.\cite[p.~417-418]{govtReport}  Of these 10, they describe the credit rating agencies as being the "essential cogs in the wheel of financial destruction."\cite[p.~xxv]{govtReport} The rating agencies described are Standard \& Poor's, Moody's Investors Service, and Fitch Ratings.  The report shows that these agencies, specifically Standard \& Poor's and Moody's, received pressure from financial firms to give skewed ratings \cite{ratingEthics, hRatingEthics} and relied on outdated and flawed computer models in their rating of investments, specifically mortgage backed securities. \cite[p.~xxv]{govtReport}  This brings up a clear ethical dilemma: should Standard \& Poor's and Moody's be in charge of the rating and regulation of these financial markets when a clear conflict of interest exists?  Because the financial collapse sent the United States into the largest recession since the Great Depression, and the rating agencies were determined to be "key enablers" to this financial crisis, they should not be solely in-charge of rating debt and securites. 
+\end{abstract}
+
+\thispagestyle{empty} %remove page number from title page
+\newpage
+
+
+%Create a table of contents with all headings of level 3 and above.
+%http://en.wikibooks.org/wiki/LaTeX/Document_Structure#Table_of_contents has
+%info on customizing the table of contents
+\thispagestyle{empty}  %Remove page number from TOC
+\tableofcontents
+
+\newpage
+
+%end the 1 column format
+
+
+%start 2 column format
+\begin{multicols}{2}
+%Start numbering first page of content as page 1
+\setcounter{page}{1}
+%%%%%%%%%%%%%%%%%%%%
+%%% Known Facts  %%%
+%%%%%%%%%%%%%%%%%%%%
+\section{Facts}
+In order to understand and appreciate the impact Standard \& Poor's and Moody's had on the financial crisis, it is necessary to have a basic knowledge of the United States financial industry and its usage of computers and software before the 2008 crisis.  To aide with this understanding, the following sections lay out the facts regarding the financial crisis and credit rating agencies.
+
+
+\subsection{Financial Crisis}
+In Fall 2008, the United States experienced the worst financial crisis since the Great Depression in 1930.  The FCIC report states that over 26 million people were unemployed, four million families lost homes due to foreclosure and nearly \$11 trillion in household wealth was lost as a result of the financial collapse.  \cite[p.~xv]{govtReport}  Overall, the market dropped 41 percent over an eight week period. \cite{marketWatch}  It was the collapse of the housing bubble in late 2007, that sent the US into this financial crisis
+
+
+From the late 1990's to the early 2000's, the US housing market was booming and housing prices rose 124\% between 1997 and 2006. \cite{economistCreditCrunch}  This tempted many individuals to live outside their means and take on mortgages that they could not feasibly afford.  According to the FCIC report, "nearly one in 10 mortgage borrowers in 2005 and 2006 took out option ARM(Adjustable Rate Mortgage) loans, which meant they could choose to make payments so low that their mortgage balances rose every month. \cite[p.~xx]{govtReport} It wasn't just individuals engaging in this risky financial behaviour, banks and mortgage lenders acted as enablers by lending interest only loans, often requiring little or no proof of ability to repay. \cite[p.~xxiii]{govtReport}  In 2006, one-fifth of new mortgages were subprime, meaning they were given to people with a low credit rating who may have difficultly paying it back. \cite{economistCreditCrunch}  These subprime mortgages then began to find their way into mortgage-backed securities which ultimately became the tipping point for the collapse of the housing bubble.
+
+
+Mortgage-backed securities are defined by the Securities and Exchange commission as "debt obligations that represent claims to the cash flows from pools of mortgage loans, most commonly on residential property." \cite{secMBS} These loans undergo a process called securitization, which means they are pooled together, packaged, and rated.  This is done to minimize risks for investors by spreading the investment across multiple mortgages rather than relying on a single borrower as your investments security.  It also creates a way for banks to make more money on these loans.  
+
+
+After the process of securitization, the investment banks who created these securities sell shares, called "tranches," to investors who then can collect varying dividends from the interest payments on the mortgage.  From this comes numerous derivatives such as CDO's, CDS's, and a slew of other acronyms that investment banks and investors used both to increase earnings on securities and decrease risk.  To put it in the words of policy makers in the 1990's when this securitization process was first described to them, "This stuff is so complicated how is anybody going to know? How are the buyers going to buy?" \cite[p.~68]{govtReport}  
+
+
+Their answer to this question was Credit Rating Agencies.
+
+\subsection{Credit Rating Agencies}
+In the US today, there are three primary credit rating agencies, Standard \& Poor's, Moody's Investor Service and Fitch Ratings.  These three control almost all of the market share; with Standard and Poor's and Moody's controlling 40\% each and Fitch controlling around 14\%. \cite{wpMoodies}  The Securities and Exchange Commission (SEC) regulates these rating agencies under what it calls "nationally recognized statistical rating organizations" (NRSRO's) \cite{CivilLiability} 
+
+As mentioned in the previous section, when a bank wants to issue a MBS, they have to have it rated on its "credit worthiness," which is simply the likelihood that the borrower will repay.  They rate this "credit worthiness" based on a rating scale: 'AAA' being the highest (almost no chance of default) and 'D'(in default.)  \cite{CivilLiability}  This scale was created to make it easier for investors to understand the quality of their investments and save time researching and checking on each and every part of a security.   From 2000 to 2007, Moody's rated nearly 45,000 mortgage-related securities as triple-A. \cite[p.~xxv]{govtReport} In 2005 and 2006, thousands of securities packaged mostly with subprime mortgages were given the AAA rating, deeming them safe as government bonds.  Of these packaged securities, 90 percent of them were downgraded to junk status between 2006 and 2007. \cite{ratingEthics}  
+
+Unlike most regulatory or semi-regulatory agencies, which are government run, all three credit rating agencies are for-profit businesses - Standard \& Poor's and Fitch Ratings are private companies, and Moody's is publicly traded.  They make their money by charging the issuers of the bonds - meaning the banks, investors and mortgage brokers. This is known as a "Issuer-Pays" system. \cite{gatekeepers} From 2000 to 2005, Moody's investment services saw their revenues increase by over 500 percent\cite{gatekeepers} and by 2006, in only four years both Standard \& Poor's and Moody's gross revenue quadrupled.  According to the FCIC, Eight banks, including Goldman Sach's, JPMorgan, and UBS AG pressured these rating agencies to "weaken their standards" in order to boost business and achieve greater market share. \cite{ratingEthics} This was done primarily through market pressure made by the banks threatening to go to competitors unless they gave them a rating that the banks expected, which was usually higher than it deserved.  
+
+Coupled with this weakend standard of ratings, the FCIC concluded that outdated and flawed computer models contributed to the crisis. \cite[p.~xxv]{govtReport} The credit rating agencies rely on quantatiative analysts (known as "quants"), who combine statistics, economics and computer science to create computer models that use data from the past, and current information about the market, to generate predicitons of what the market might do. \cite{quantsRole} These models, combined with other research, are used by the agencies to help determine the rating they give to a security or bond.
+
+Investigation has shown that, in the years leading up to the financial crisis, these quants were generating inaccurate and overly optimistic models. Specifically, the Gausian Copola Function, which was developed as a way to model the correlation between defaults without having to use historical data, was determined to be the source of these inaccurate models. \cite{wiredFormula} The problems it caused wasn't the fault of the function, but rather a improper use of the function.  Paul Wilmott, a quantitative finance consultant and lecturer said that, "correlations between financial quantities are notoriously unstable." \cite{wiredFormula} According to Wired Magazine, rating agencies such as Moody's, used this function as a way to not worry about the underlying parts of a security when determining it's risk, but rather just use the correlation number to determine its rating.  The New York Times, as well as the FCIC, noted that quants for the major banks and rating agencies were creating overly optimistic models by building them from skewed or incorrect data. \cite{nyTimesQuants, govtReport}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Research Question %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Research Question}
+Is it ethical for Standard \& Poor's and Moody's to rate and act as gatekeepers for industries in which they stand to benefit based on the ratings they give?
+
+The ratings on bonds issued by these agencies affect more than just the parties directly involved. The FCIC report showed that in late 2008, showed that S\&P and Moody's sudden downgrade in ratings for many mortgage backed securities was the leading cause for this crisis. \cite{huffCreditCause}  This resulted in the market dropping 41\% in eight weeks \cite{marketWatch} and sent the US into a long-term recession in which 39\% of households experienced unemployment and other economic hardship. \cite{collapseImpact}  The credit agencies are a crucial part of the world economic structure; without a rating by one of the big three rating agencies, it is almost impossible to sell any sort of security.  In fact, most securities are required by law to be rated by two agencies before they can be bought or sold. \cite{wpMoodies}  This means that the world financial market cannot function currently without these companies.  Because of the serious roll Standard \& Poor's and Moody's played in the recent financial crisis, and their roll as "gatekeepers" of the financial markets, answering the above stated question is extremely important for not only software engineers and financial professionals, but for the general public.    
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Extant Arguments from External Sources %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Arguments For}
+\textit{It is ethical for private rating agencies to rate credit}
+
+All of the arguments for the affirmative are based on businesses rights, whether its freedom of speech or the ability to self-regulate and grow.
+\subsection{First Amendment Rights}
+The rating agencies have relyed on the First Amendment of the Constitution as their primary defense against Washington regulators and angry investors. Their defense is that the ratings they provide are meerly opinions which are protected under free speech.  Floyd Abrams, Standard \& Poor's representative and renowned First Amendment lawery, said that credit ratings are educated opinions about the quality of bonds, not guarantees that the bonds will or will not default. 
+\subsection{Government Regualtion Stifles Creativity}
+
+\section{Arguments Against}
+\textit{It is not ethical for private rating agencies to rate credit}
+
+The arguments for the negative focus primarily on the actions of the credit rating agencies before and during the financial crisis. 
+\subsection{Poor Performance and Loss of Quality}
+Calpers, or California Public Employees Retirement System, is the nations largest pension fund with over \$173 billion in assets.  In July of 2009, they filed suit against the three largest credit rating agencies (Standard \& Poor's, Moody's and Fitch) for "negligent misrepresentation" of information in its ratings of a certain investment which Calpers invested \$1.3 billion in 2006.  Calpers invested in packages of securities based on the rating agencies 'AAA' rating, of which the suit says the ratings "proved to be wildly inaccurate and unreasonably high" and the method in which the ratings were determined was "seriously flawed in conception and incompetently applied." \cite{nyTimesCalpers}  Of all the securities backed with subprime mortgages in two years leading up to the crisis that were given a 'AAA' rating, 90\% of them were downgraded to junk status in 2007 and 2008. \cite{ratingEthics}
+
+\subsection{Conflict of Interest}
+
+%%%%%%%%%%%%%%%%
+%%% Analysis %%%
+%%%%%%%%%%%%%%%%
+\section{Analysis}
+In order to determine whether or not Standard \& Poor's (S\&P) and Moody's are ethical in rating credit the same way they have been in the past, this paper will use the Software Engineering (SE) Code of Ethics as well as utilitarianism and deontology.  To be able to apply the SE code of ethics, an individual or organization must be considered "Software Professionals" as defined by the SE code. The SE code states that it applies to:
+
+\ ''Professional software engineers, including
+\ practitioners, educators, managers, supervisors
+\ and policy makers, as well as trainees and
+\ students of the profession."
+
+Although S\&P and Moody's are primarily known as financial companies, the are included in this definition since they develop software applications to analyze and aggregate investment data. \cite{SnP, Moodys} Not only do they provide software for investors and analysts, they use Quantitative Analysts (known as "quants") to generate computer models which are used to predict market trends and rate securities. \cite{quantsRole, govtReport}  Because they develop, distribute, and use software and they employ software engineers, S\&P and Moody's can be evaluated according to the rules laid out in the SE code of ethics. 
+
+\subsection{SE Code 1.02: Moderate Interests with the Public Good}
+This first part of the code that is applicable is Rule 1.02, which states
+ 
+
+{\addtolength{\leftskip}{6mm}
+{\textbf''1.02 - Moderate the interests of the software engineer, ..., the client and the users with the public good.''}
+}
+
+
+Rule 1.02 deals with the interests and conflicts that may exist between involved individuals and the overall public good.  When this rule is applied directly to the question asked by this paper, the phrase "software engineer" refers to Standard and Poor's and Moody's since they are the investment service provider, meaning they aggregate data regarding investments and use computer models to rate these investments. The "client" refers to investment banks such as Goldman Sachs or other customers of these rating agencies, since they pay for the ratings and use their investment services.  The "users" refers to any investor or individual who uses the ratings as a guide for their investments.  Substituting these specific definitions into rule 1.02 would state:
+
+
+{\addtolength{\leftskip}{6mm}
+{\textbf''Substituted SE Code 1.02 - Moderate the interests of Standard \& Poor's, Moody's, Goldman Sachs, and all investors with the public good.''}
+}
+
+
+In order to determine whether or not the above mentioned parties acted with the public good, we need to define what public good means.  In this case, public good is defined in the SE code as "... to consider how the public, if reasonably well informed, would view their decisions; to analyze how the least empowered will be affected by their decisions." \cite{SECode}  This is a primarily utilitarian definition, so it can be simplified to mean: the best possible outcome for the greatest number of people.  Interpreting the substituted Rule 1.02 according to this definition would mean that the mentioned companies must consider the well of the uninformed public when making decisions and make sure they do not hurt the general public with their actions.
+  
+To show if the greatest good for the greatest number of people was achieved, there needs to be a way to quantify and calculate the "good." In the case of financial markets and the ethical question presented, the "good" can be considered personal wealth and economic status.  The credit rating agencies then must perform all aspects of their business not only based solely on their interests in making money for the company or, in the case of Moody's, its' shareholders.  They must also take into consideration the interests and well being of the uninformed public.
+
+The FCIC report on the cause of the recent financial crisis showed that the credit rating agencies (specifically Standard \& Poor's and Moody's) both were major contributing parties to the cause of the crisis. \cite{govtReport, huffCreditCause}  They were shown to have caved into pressure by major investment banks to give investment grade ratings to junk bonds, while also using flawed and outdated computer models to generate the information used to rate these securities.  This resulted in massive downgrades in ratings of mortgage-backed securities: 83\% of Moody's 'AAA' rated mortgage-backed securities were downgraded. \cite[p.~xxv]{govtReport} This is what which ultimately tipped the scale for the financial collapse.  As previously cited in the abstract, the FCIC described them as "essential cogs in the wheel of financial destruction."  This crisis brought the US into a long term recession costing over 11 trillion in household wealth and millions of foreclosures.  The decisions and actions of Moody's and Standard \& Poor's directly affected the lives of millions of the "least empowered" or general public. Therefore, according to the SE Code it is not ethical for Standard \& Poor's and Moody's to rate credit since there is clear evidence that they are not moderating their own interests with the interests ofbbri the public good. 
+
+
+\subsection{SE Code 4.04: Avoid Deceptive Financial Practices}
+
+The previous sections briefly describe the credit rating agencies actions and how they ultimately led the 2008 financial crisis.  The next rule that applies is 4.04, which relates to matters of judgement.  It states
+
+
+{\addtolength{\leftskip}{6mm}
+{\textbf''4.04 - [Do] Not engage in deceptive financial practices such as bribery, double billing, or other improper financial practices.''
+}}
+
+
+This specific rule describes specifically how software professions should act in financial matters.  Given that credit rating agencies are primarily financial companies who use and develop software as part of their business, ethical behaviour in this area is especially important.  
+4.04 describes deceptive financial practice as "bribery, double billing, or other improper financial practices."  Of these, double billing is not applicable to this topic, but bribery and other improper financial practices can be seen in Moody's and Standard \& Poor's actions.  "Improper financial practices" will be defined as poor allocation of company resources.
+
+The rule would then state following these substitutions
+
+
+{\addtolength{\leftskip}{6mm}
+{\textbf''Substituted SE Code 4.04 - Moody's and Standard \& Poor's should not participate in deceptive financial practices such as bribery or poor allocation of company resources.''}
+}
+
+
+On the surface, it seems as though Moody's and Standard \& Poor's did not participate in any sort of improper financial practice.  But when we look closer at the actions of these companies in the years leading up to the financial crisis, two areas of interest arise in which they participated in the improper financial practices.  
+
+The first improper practice was bribery.  Bribery is the giving of a bribe - which is defined by Merriam Webster as "money or favor given or promised ... to influence ... judgement" or "something that serves to induce or influence." \cite{bribeDef}  Although it seems that no exchange of money or favors was given or received by Standard \& Poor or Moody, when we apply the second definition of bribe to these companies, it becomes clear that the banks did "bribe" or "serve to induce or influence" when they applied pressure to alter ratings of securities.  The agencies then accepted the "bribe" by altering their ratings based on this pressure.  
+So what did Moody's and Standard and Poor's stand to gain from this "bribe?"  As mentioned earlier, rating agencies make money by charging fees to the issuers of the debt or securities.  
+
+
+\subsection{SE Code 3.14: Data Integrity}
+
+{\addtolength{\leftskip}{6mm}
+{\textbf''3.14 - Maintain the integrity of data, being sensitive to outdated or flawed occurrences.''}
+}
+
+\subsection{SE Code 6.08: Responsibility to Correct Software}
+
+{\addtolength{\leftskip}{6mm}
+{\textbf''6.08 - Take responsibility for detecting, correcting, and reporting errors in software and associated documents on which they work.''}
+}
+
+
+%%%%%%%%%%%%%%%%
+%%% Conclusion %%%
+%%%%%%%%%%%%%%%%
+\section{Conclusion}
+
+%end the two column format
+\end{multicols}
+\newpage
+
+
+%cite all the references from the bibtex you haven't explicitly cited
+\nocite{*}
+
+\bibliographystyle{IEEEannot}
+
+\bibliography{texreport}
+
+\end{document}

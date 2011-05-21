@@ -1,0 +1,31 @@
+Section A:
+  Part 1: 
+     1 - The W3C is an organization that focuses on developing the World Wide 
+         Web (internet) through developing protocals and guidelines to ensure
+         the long-term grown of the web. [paraphrased from website]
+         The W3C was founded in October of 1994 with the above stated purpose.
+     2 - The WAI was started to help people with disabilities be able to use, 
+         understand, and interact with the web and all of its features.  Not only is it supposed to help those with disabilities, but also people with 
+         age or other related ailments. 
+         The key issues are creating websites and web software that is accessible to disabled individuals and 
+         training developers how to create websites and software that can do this.
+
+  Part 2:
+         The SE Code touches on this dilema with issue 1.7 which says that we must consider issues like physical
+         disabilities, but the SE code also states that we must strive for creating a product on an acceptable
+         schedule and at a reasonable cost.  Because the software is extremely difficult to use for Visually
+         impaired people, it doesn't comply with issue 1.7, but implimenting the fix would push deadlines back
+         and cause financial and launch problems.  The compromise I think would be best would be to note the issue
+         and release an update to the software at a later time which includes the features.  This problem shouldn't
+         exsist in a perfect design world though because it should have been noted in the requirements / specs from
+         the beginning.
+  Part 3:
+			1. The creators want to make the web and software available for and usable by everyone.  
+            They do this by presenting guidelines for writing and developing accessible software.
+
+			2. Yes, it’s posted on www.justice.gov, how much more authentic and credible can you get? :) 
+
+			3. Yes; “does the software notify the user of time constraints”?
+
+			4. Create subcategories for specific domains of software; add a row for notifying users of time constraints 
+            in multiple ways.
