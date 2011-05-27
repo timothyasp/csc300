@@ -107,6 +107,8 @@ Investigation has shown that, in the years leading up to the financial crisis, t
 \textit{Is it ethical for Standard \& Poor's and Moody's to rate and act as gatekeepers for industries in which they stand to benefit based on the ratings they give?}
 \newline
 
+\subsection{Why is this important?}
+
 The ratings on bonds issued by these agencies affect more than just the parties directly involved. The FCIC report showed that in late 2008, the sudden downgrade in MBS and CDO ratings by the credit rating agencies (Standard \& Poor's, Moody's and Fitch's) was the leading cause for the crisis. \cite{huffCreditCause, govtReport}  This resulted in the market dropping 41\% in eight weeks \cite{marketWatch} and sent the US into a long-term recession in which 39\% of households experienced unemployment or other economic hardship. \cite{collapseImpact}  The credit agencies are a crucial part of the world economic structure; without a rating by one of the big three agencies, it is almost impossible to sell any sort of security.  In fact, most securities are required by law to be rated by two agencies before they can be bought or sold. \cite{wpMoodies}  This means that the world financial market cannot function currently without these companies.  Because of the serious role Standard \& Poor's and Moody's played in the recent financial crisis, and their role as ``gatekeepers'' of the financial markets, answering the above stated question is extremely important not only for software engineers and financial professionals, but for the general public.    
 
 %%%%%%%%%%%%%%%%%%%%%%%%%
@@ -215,8 +217,8 @@ The previous sections briefly describe the credit rating agencies actions and ho
 \end{framed}
 
 
-This rule describes how software professionals should act in financial matters.  Given that credit rating agencies are primarily financial companies who use and develop computer models to determine the ratings of investments, ethical behaviour in this area is especially important.  
-4.04 describes deceptive financial practice as ``bribery, double billing, or other improper financial practices.''  Of these, double billing is not applicable to this topic, but bribery and other improper financial practices can be seen in Moody's and Standard \& Poor's actions.  According to the FCIC, SEC and the Congressional Research Service, although the agencies revenues and profits increased drastically, they were short staffed and ``undermanned to effectively accommodate the overwhelming volume of structured finance business.'' \cite[pg. 7]{CRS, govtReport, secCRAreport} Therefore, ``Improper financial practices'' will be defined as poor allocation of company resources.  
+This rule describes how software professionals should act in financial matters.  Given that credit rating agencies are primarily financial companies who use and develop computer models to determine the ratings of investments \cite[p.11]{govtReport}, ethical behaviour in this area is especially important.  
+4.04 describes deceptive financial practice as ``bribery, double billing, or other improper financial practices.''  Of these, double billing is not applicable to this topic, but bribery and other improper financial practices can be seen in Moody's and Standard \& Poor's actions.  According to the FCIC, SEC and the Congressional Research Service, although the agencies revenues and profits increased drastically, they were short staffed and ``undermanned to effectively accommodate the overwhelming volume of structured finance business.'' \cite[p. 7]{CRS, govtReport, secCRAreport} Therefore, ``Improper financial practices'' will be defined as poor allocation of company resources.  
 Using these specific terms:
 
 
@@ -239,9 +241,9 @@ As shown in the `Arguments Against' section under `Conflicts of Interest,' credi
 
 \textbf{Understaffed and Overworked}
 
-The second improper practice was the poor allocation of company resources.  Although Moody's revenues quadrupled between 2000 and 2007, the company and its employees were understaffed and underresourced, or in the words of the FCIC reports conclusions, ``lack of resources to do the job despite record profits.'' \cite[p. xxv]{govtReport}  According to the SEC's investigation of the three credit rating agencies in 2008, all areas of the agencies did not suffer from insufficient resources, just the RMBS (residential mortgage backed securities) and CDO rating departments. \cite{secCRAreport}  In the report, they share one analyists emails saying ``our staffing issues, of course, make it difficult to deliver the value that justifies our fees'' and, ``Just too much work, not enough people, pressure from company, quite a bit of turnover and no coordination of the non-deal 'stuf' they want us and our staff to do.'' \cite{secCRAreport}  Unlike most other markets, where underperforming companies lose market share and suffer, Moody's profits and revenue just kept increasing as shown in section 1.2 of this paper.  But this staffing issue did more than just cause stress for employees and provide less value to the customer, it caused the inevitable slip in rating quality without the customer (investment banks) caring about the quality.   
+The second improper practice was the poor allocation of company resources.  Although Moody's revenues quadrupled between 2000 and 2007, the company and its employees were understaffed and underresourced, or in the words of the FCIC investigators, ``lack of resources to do the job despite record profits.'' \cite[p.xxv]{govtReport}  According to the SEC's investigation of the three credit rating agencies in 2008, all areas of the agencies did not suffer from insufficient resources, just the MBS (mortgage backed securities) and CDO rating departments. \cite{secCRAreport}  In the report, they share one analyists emails saying ``our staffing issues, of course, make it difficult to deliver the value that justifies our fees'' and, ``Just too much work, not enough people, pressure from company, quite a bit of turnover and no coordination of the non-deal 'stuf' they want us and our staff to do.'' \cite{secCRAreport}  Unlike most other markets, where underperforming companies lose market share and suffer, Moody's profits and revenue just kept increasing as shown in section 1.2 of this paper.  But this staffing issue did more than just cause stress for employees and provide less value to the customer, it caused the inevitable slip in rating quality without the customer (investment banks) caring about the quality.   
 
-According to one of the CDO groups senior managers at Moody's, the group was ``under-resourced'' and had trouble ``retaining and recruiting good staff''. ``We had almost no ability to do meaningful research.'' \cite[p. 149]{govtReport}  Despite the companies record profits (specifically the CDO division, which accounted for almost 44\% of the companies revenue) - the short-staffed, inexperienced CDO group felt intense pressure from banks and internal management to give high ratings in order to keep market share and revenues high. \cite[pg. 149-150]{govtReport}
+According to one of the CDO groups senior managers at Moody's, the group was ``under-resourced'' and had trouble ``retaining and recruiting good staff,''  ``We had almost no ability to do meaningful research.'' \cite[p.149]{govtReport}  Despite the companies record profits (specifically the CDO division, which accounted for almost 44\% of the companies revenue) - the short-staffed, inexperienced CDO group felt intense pressure from banks and internal management to give high ratings in order to keep market share and revenues high. \cite[p.149-150]{govtReport}
 
 \textbf{Conclusion: SE Code 4.04}
 
@@ -257,19 +259,9 @@ Principle 4, specifically rule 4.04, is included in the SE code to address the e
 Software engineers shall ensure that their products and related modifications meet the highest professional standards possible.
 \end{framed}
 
+The introduction of new structured finance products, specifically mortgage-backed securities (MBS) and collatorized debt obligations (CDO), created by investment banks such as Goldman Sachs and JP Morgan Chase, made determining the quality of these new investments incredibly complex. \cite[p.43]{govtReport} This created an opportunity for the rating agencies to expand their market by rating these CDO's and MBS's with their easy to understand rating scale. \cite[p.43]{govtReport}  While it created a new market, it also created the need for a new way to determine the rating of these investments since traditional methods of research were not enough to accurately rate these securities.\cite[p.43]{govtReport}  So they used Quantatative Analyists to create computer models to determine the risk and ultimately, the rating of the investment. \cite{wiredFormula}\cite[p.120]{govtReport}  
 
-The next two sections discuss the credit rating agencies, specifically Moody's, use of Quantatative Analyists (Quants) and their computer models in the rating of mortgage-backed securities and CDO's (Collatorized Default Obligations).  Substituting Principle 3 with the topic relavent information, it would read:
-
-\begin{framed}
-\noindent
-{\bf Substituted SE Principle 3:}
-\newline
-Quantatative Analysts and their employeers (Moody's Corporation) shall ensure that their models that are used to rate credit meet the highest profesional standards possible.
-\end{framed}
-
-For the purposes of the following analysis, I'm going to define ``highest professional standards possible'' as a product that works as it is intended, meets requirements and underwent some sort of quality assurance and testing.  The ethical analysis of the quants and their models will be done using the SE code Principle 3, rule 14.
-
-\subsubsection{Data Integrity - SE Code 3.14}
+These credit rating agencies, specifically Moody's, can be held to Principle 3 of the SE code of ethics since they created these computer models to rate investments.  Therefore, these models can be considered the ``product''\cite{SEcode} mentioned in Principle 3 above because it is essential to their main business (ratings.)  Specifically, tenant 3.14 of the SE code of ethics will be used in the ethical analysis of Moody's rating models.  It states that software engineers should:
 
 \begin{framed}
 \noindent
@@ -278,20 +270,22 @@ For the purposes of the following analysis, I'm going to define ``highest profes
    Maintain the \underline{integrity of data}, being sensitive to \underline{outdated} or \underline{flawed occurrences}.
 \end{framed}
 
+3.14 describes the considerations that software engineers need to make when dealing with data used in and by our software.  Breaking up the rule into smaller parts, the ``integrity of data'' \cite{SEcode} is defined as ``the quality of correctness, completeness, soundness and compliance with the intention of the creators of the data.'' \cite{dataIntegrityDef} Thus, ``integrity of data'' in Moody's case, can be substituted to say ``integrity of Moody's financial data.'' while ``outdated or flawed occurrences,'' \cite{SEcode} can be substituted to say ``outdated and flawed financial data.''  Therefore, after substituting these values into SE code 3.14, it states:
 
 \begin{framed}
 \noindent
    \textbf{Substituted SE Code 3.14: } 
    \newline
-   Maintain the \underline{integrity of data}, being sensitive to \underline{outdated and limited financial data}.
+   Maintain the \underline{integrity of Moody's financial data}, being sensitive to \underline{outdated and flawed financial data}.
 \end{framed}
 
-\textbf{Quants and Wall Street}
+\textbf{The Gaussian Copula Function}
 
-\textbf{Gaussian Copula Function}
+
 
 \textbf{The Models}
 
+ In Moody's case, they plugged into their computer models data of past financial markets and individual loans within the security to determine the rating of their investments.\cite{wiredFormula} 
 
 %%%%%%%%%%%%%%%%
 %%% Conclusion %%%
